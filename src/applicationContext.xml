@@ -15,5 +15,10 @@
 	http://www.springframework.org/schema/util/spring-util-4.1.xsd">
 
 	<!-- IOC容器配置，要创建的所有对象都配置到这里，交给Spring容器来管理 -->
+	<!-- 每次容器启动的时候会创建容器中配置的所有bean对象 -->
+	<!-- bean的属性：
+		scope（范围）：
+			singleton，单例模式，在Spring中就存在一个实例 。（默认）
+			prototype，多例模式，可以创建多个对象-->
 	<bean name="student" class="com.situ.spring.entity.Student"/>
 </beans>
